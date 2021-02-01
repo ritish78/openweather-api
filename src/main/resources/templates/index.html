@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Weather Info</title>
+    <link rel="stylesheet" href="/css/search.css">
+    <script type="text/javascript" src="/js/sendInfo.js"></script>
+</head>
+<body>
+    <div id="container_city">
+        <div class="search-box">
+            <h1>Search By City</h1>
+            <form method="post" action="#" th:action="@{/search}">
+                <input id="city" name="city" type="text" placeholder="City" required/>
+                <input type="submit" name="search" value="Search"/>
+            </form>
+        </div>
+    </div>
+    <div id="container_zip">
+        <div class="search-box">
+            <h1>Search By Zip</h1>
+            <form method="post" action="#" th:action="@{/search}">
+                <input id="zip" name="zip" type="text" placeholder="Zip" required/>
+                <input id="country" name="country" type="text" placeholder="Country" required/>
+                <input type="submit" name="search" value="Search"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

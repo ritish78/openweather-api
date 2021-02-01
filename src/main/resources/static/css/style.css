@@ -1,0 +1,42 @@
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Nunito', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+td:hover {
+    color: #C75450;
+}
+
+span:hover {
+    color: #63B175;
+}
+
+h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+}

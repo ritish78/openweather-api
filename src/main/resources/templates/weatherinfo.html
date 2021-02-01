@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <h1>Weather info for:
+            <span th:text="${cityName}"></span>
+       </h1>
+        <hr>
+       <table>
+           <thead>
+                <th>Temperature (Celsius)</th>
+                <th>Feels Like (Celsius)</th>
+                <th>Main</th>
+                <th>Description</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+                <th>Wind Speed</th>
+                <th>Time Zone</th>
+           </thead>
+           <tbody>
+                <tr th:each="weatherObject: ${weatherObject}">
+                    <td th:text="${weatherObject.temperature}"></td>
+                    <td th:text="${weatherObject.feelsLike}"></td>
+                    <td th:text="${weatherObject.main}"></td>
+                    <td th:text="${weatherObject.description}"></td>
+                    <td th:text="${weatherObject.pressure}"></td>
+                    <td th:text="${weatherObject.humidity}"></td>
+                    <td th:text="${weatherObject.windSpeed}"></td>
+                    <td th:text="${weatherObject.timeZone}"></td>
+                </tr>
+           </tbody>
+       </table>
+   </div>
+
+</body>
+</html>
