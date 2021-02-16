@@ -1,11 +1,13 @@
 # openweather-api
 Using [OpenWeather API](https://openweathermap.org/api) to fetch current weather info.
 
+* Deployed to Heroku:
+You can visit the site without cloning the repository. Link: https://rt-weather.herokuapp.com/
+
 # How to install:
 
 1. First you need to get the API Key from OpenWeather.
-1. Then add the key in [application.properties](https://github.com/ritish78/openweather-api/blob/master/src/main/resources/application.properties)
-1. Clone this repo. In terminal:
+2. Clone this repo. In terminal:
 ````
 git clone https://github.com/ritish78/openweather-api.git
 ````
@@ -14,6 +16,7 @@ Then, open in IDE of your choice. Then in terminal of IDE:
 ````
 mvn clean install
 ````
+3. Then add the key in [application.properties](https://github.com/ritish78/openweather-api/blob/master/src/main/resources/application.properties)
 
 After maven loads changes, then you can start the Spring Boot Application.
 To do so, in terminal enter:
@@ -21,7 +24,7 @@ To do so, in terminal enter:
 mvn spring-boot:run
 ````
 
-Tomcat should start the server in <b>Port 8000.</b>
+Tomcat should start the server in Port `8000`.
 
 
 # Usage:
